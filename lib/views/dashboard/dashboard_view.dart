@@ -41,8 +41,13 @@ class _DashboardViewState extends State<DashboardView> {
       AppConstants.coin: "BTCUSDT",
       AppConstants.percentage: "36.77 %"
     },
+    {
+      AppConstants.svg: SvgAssets.ethereum,
+      AppConstants.coin: "ETHUSDT",
+      AppConstants.percentage: "36.07 %"
+    },
   ];
-  List<bool> activeList = [true, false, true];
+  List<bool> activeList = [true, false, true, true, false];
   @override
   void initState() {
     isTab = true;

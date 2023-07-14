@@ -8,7 +8,7 @@ class Validator {
     } else {
       // check length of string
       if (value.length <= 7) {
-        return "$title must be at least 8 chars".capitalize();
+        return "$title must be at least 8 characters".capitalize();
       } else {
         return null;
       }

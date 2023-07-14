@@ -37,7 +37,7 @@ class _LoginViewState extends State<LoginView> {
               failure: state.error,
             );
           } else if (state is LoginSuccessful) {
-            NavigationService.instance.navigateTo(NavigatorRoutes.home);
+            NavigationService.instance.navigateToReplace(NavigatorRoutes.home);
             AppFlushBar.showSuccess(
               title: state.title,
               message: state.message,
