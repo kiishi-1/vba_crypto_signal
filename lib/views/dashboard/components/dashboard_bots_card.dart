@@ -53,7 +53,9 @@ class DashboardBotsCard extends StatelessWidget {
             ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: AppColors.activeGreen.withOpacity(0.1),
+              color: isActive
+                  ? AppColors.activeGreen.withOpacity(0.1)
+                  : AppColors.grey.withOpacity(0.1),
             ),
             child: Row(
               children: [
